@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ requested }} &mdash; Apothecary Cabinet</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Cinzel:wght@600&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="wrap">
+  <span class="eyebrow">Forbidden Arts Wing</span>
+  <h1>{{ requested }}</h1>
+  <div class="recipe-card">
+    <span class="path">requested: {{ requested }}</span>{{ content }}
+  </div>
+  <a class="back-link" href="/">&larr; back to the cabinet</a>
+</div>
+<footer>Forbidden Arts Wing &middot; Cabinet Access Log</footer>
+</body>
+</html>
