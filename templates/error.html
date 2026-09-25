@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ code }} &mdash; Apothecary Cabinet</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Cinzel:wght@600&family=Cormorant+Garamond:ital,wght@0,500;1,500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="wrap">
+  <p class="error-code">{{ code }}</p>
+  <p class="sub" style="margin-top:0.8rem;">{{ message }}</p>
+  <a class="back-link" href="/">&larr; back to the cabinet</a>
+</div>
+<footer>Forbidden Arts Wing &middot; Cabinet Access Log</footer>
+</body>
+</html>
